@@ -1,0 +1,9 @@
+<div class="container row">
+  <mat-grid-list cols="10" rowHeight="2:2">
+    <mat-grid-tile *ngFor='let image of imagesList; let i=index'>
+      <button [id]="image.index" (click)="displayName($event)" [matTooltip]="image.name">
+      <img  height="100" width="100"
+            [src]='image.path' (click)="displayName($event)"></button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

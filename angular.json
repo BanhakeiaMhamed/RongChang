@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rong-chang"
+    }
+  },
+  "defaultProject": "rong-chang",
+  "cli": {
+    "analytics": "d98e6f69-cf34-44c9-93a0-7a06e0a8d6d7"
+  }
 }
