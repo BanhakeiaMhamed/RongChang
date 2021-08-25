@@ -1,1 +1,10 @@
-<p>animals works!</p>
+<div class="container row">
+  <mat-grid-list cols="4" rowHeight="4:4">
+    <mat-grid-tile *ngFor='let image of imagesList; let i=index'>
+      <button [id]="image.index" (click)="displayName($event)" [matTooltip]="image.name">
+        <img  height="100" width="100"
+              [name]="image.urlAudio" [src]='image.path' (click)="displayName($event)"  (mouseover)="play($event)"></button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
